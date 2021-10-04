@@ -10,6 +10,7 @@ public class Pregunta {
     public String respuestaCorrecta;
 
     public Pregunta (String pregunta, String respuesta1, String respuesta2, String respuesta3, String respuesta4, String respuestaCorrecta){
+
         this.pregunta = pregunta;
         this.respuesta1 = respuesta1;
         this.respuesta2 = respuesta2;
