@@ -69,7 +69,7 @@ public class Pregunta {
     }
     @Override
     public String toString() {
-        return getPregunta() + getRespuesta1() + getRespuesta2() + getRespuesta3() + getRespuesta4() + getRespuestaCorrecta();
+        return getPregunta() + getRespuesta1() + getRespuesta2() + getRespuesta3() + getRespuesta4();
 
     }
 }
