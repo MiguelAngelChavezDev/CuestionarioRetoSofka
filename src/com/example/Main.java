@@ -75,8 +75,8 @@ public class Main {
                 System.out.println("TU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
             } else {
                 System.out.println("JUEGO TERMINADO");
-                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 premioUsuario.acumulado = 0;
+                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 System.exit(0);
             }
         } else {
@@ -141,8 +141,8 @@ public class Main {
                     System.out.println("TU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 } else {
                     System.out.println("JUEGO TERMINADO");
-                    System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                     premioUsuario.acumulado = 0;
+                    System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                     System.exit(0);
                 }
             } else {
@@ -208,8 +208,8 @@ public class Main {
                 System.out.println("TU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
             } else {
                 System.out.println("JUEGO TERMINADO");
-                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 premioUsuario.acumulado = 0;
+                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 System.exit(0);
             }
         } else {
@@ -227,7 +227,7 @@ public class Main {
         preguntasAvanzado1 = new Pregunta[5];
         preguntasAvanzado1[0] = new Pregunta("¿Cuántos elementos hay en la tabla periódica?\n\n", "a) 120\n", "b) 100\n", "c) 118\n", "d) 115\n", "c");
         preguntasAvanzado1[1] = new Pregunta("¿Cuál es el río más largo del mundo?\n\n", "a) Misisipi\n", "b) Nilo\n", "c) Magdalena\n", "d) Amazonas\n", "d");
-        preguntasAvanzado1[2] = new Pregunta("¿Quién fue el Auténtico padre de la electricidad?\n\n", "a) Thomas Edisona\n", "b) Isaac Newton\n", "c) Nikola Tesla\n", "d) Albert Einstein\n", "c");
+        preguntasAvanzado1[2] = new Pregunta("¿Quién fue el Auténtico padre de la electricidad?\n\n", "a) Thomas Edison\n", "b) Isaac Newton\n", "c) Nikola Tesla\n", "d) Albert Einstein\n", "c");
         preguntasAvanzado1[3] = new Pregunta("¿En qué país se encuentra el desierto de Atacama?\n\n", "a) Chile\n", "b) Egipto\n", "c) México\n", "d) Sahara Occidental\n", "a");
         preguntasAvanzado1[4] = new Pregunta("¿Cuál es el hueso más pequeño del cuerpo humano?\n\n", "a) Yunque\n", "b) Estribo\n", "c) Falange\n", "d) Martillo\n", "b");
 
@@ -275,14 +275,85 @@ public class Main {
                 System.out.println("TU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
             } else {
                 System.out.println("JUEGO TERMINADO");
-                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 premioUsuario.acumulado = 0;
+                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
                 System.exit(0);
             }
         } else {
             System.out.println("Debe ingresar solamente letras a, b, c, d");
         }
 
+        //Ronda # 5 Nivel Experto
+        System.out.println("\n        ***********         ");
+        System.out.println("         RONDA # 5        ");
+        System.out.println("      PREMIO FINAL = 10000         ");
+        System.out.println("        ***********         \n");
+
+
+        Pregunta[] preguntasExperto1;
+        preguntasExperto1 = new Pregunta[5];
+        preguntasExperto1[0] = new Pregunta("¿En qué año sucedió el desastre de Chernobyl?\n\n", "a) 1989\n", "b) 1983\n", "c) 1085\n", "d) 1986\n", "d");
+        preguntasExperto1[1] = new Pregunta("¿Cuál es el metal más caro del mundo?\n\n", "a) Oro\n", "b) Rodio\n", "c) Platino\n", "d) Iridio\n", "b");
+        preguntasExperto1[2] = new Pregunta("¿Qué es Fibonacci?\n\n", "a) Sucesión definida por la recurrencia\n", "b) Una lógica matemática\n", "c) Función aplicada al conjunto de los números naturales\n", "d) Conjunto ordenado de números reales\n", "a");
+        preguntasExperto1[3] = new Pregunta("¿Cuántas teclas tiene un piano?\n\n", "a) 78\n", "b) 84\n", "c) 64\n", "d) 88\n", "d");
+        preguntasExperto1[4] = new Pregunta("La palabra “Pensamiento”, se traduce al inglés como:\n\n", "a) Though\n", "b) Through\n", "c) Thought\n", "d) Tough\n", "c");
+
+        //Declaring some variables and range of random questions
+        int max4 = 4;
+        int min4 = 0;
+        int range4 = max4 - min4 + 1;
+        int rand4 = (int) (Math.random() * range4);
+
+        //Printing a random question
+        Pregunta preguntaActual4 = preguntasExperto1[rand4];
+        System.out.println(preguntaActual4);
+
+        //Choice to leave the game
+        System.out.println("Si desea retirarse del juego presione 1 ");
+        System.out.println("Si desea continuar pulse 2 ");
+        int fin4 = sc.nextInt();
+        int opcion4 = fin4;
+
+        switch (opcion4) {
+            case 1:
+                System.out.println("JUEGO FINALIZADO");
+                premioUsuario.acumulado = premioUsuario.premioNivel1 +premioUsuario.premioNivel2 + premioUsuario.premioNivel3 + premioUsuario.premioNivel4;
+                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
+                System.exit(0);
+                break;
+            case 2:
+                sc.nextLine();
+                break;
+
+            default:
+                System.out.println("Elija una opción valida");
+        }
+
+        //Requesting user data
+        System.out.println("Elija su respuesta: ");
+        String resUser4 = sc.nextLine();
+
+        //Conditionals
+        if (resUser4.length() == 1) {
+            if (preguntaActual4.getRespuestaCorrecta().equals(resUser4)) {
+                System.out.println("\n¡RESPUESTA CORRECTA!");
+                premioUsuario.acumulado = premioUsuario.premioNivel5 + premioUsuario.premioNivel4 + premioUsuario.premioNivel3 + premioUsuario.premioNivel2 + premioUsuario.premioNivel1;
+                System.out.println("TU PUNTAJE FINAL ES = " + premioUsuario.acumulado);
+            } else {
+                System.out.println("JUEGO TERMINADO");
+                premioUsuario.acumulado = 0;
+                System.out.println("SU PUNTAJE ACUMULADO ES = " + premioUsuario.acumulado);
+                System.exit(0);
+            }
+        } else {
+            System.out.println("Debe ingresar solamente letras a, b, c, d");
+        }
+
+        System.out.println("\n¡FELICITACIONES!");
+        System.out.println("HAZ LLEGADO AL FINAL DEL JUEGO");
+        System.out.println("GANASTE EL PREMIO MAYOR");
+
         }
     }
+
 
