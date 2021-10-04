@@ -1,0 +1,25 @@
+
+M
+java:S1854"8Remove this useless assignment to local variable "rand".(³§¸~
+J
+java:S6212"/Declare this local variable with "var" instead.(Ó´•’üÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(Ó€í¬ûÿÿÿÿ
+>
+java:S2140")Use "java.util.Random.nextInt()" instead.(³§¸~
+V	java:S125"<This block of commented-out lines of code should be removed.(¸íª†úÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(ç¢òÅýÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ó²ÊÍþÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(“ÆÞ…
+Q	java:S125"<This block of commented-out lines of code should be removed.(‡Åàå
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(¹æŒ€ÿÿÿÿÿ
+V	java:S125""<This block of commented-out lines of code should be removed.(‚ì˜Óøÿÿÿÿ
+J
+java:S6212$"/Declare this local variable with "var" instead.(ðÛ²¸øÿÿÿÿ
+J
+java:S6212&"/Declare this local variable with "var" instead.(â×‰¢ûÿÿÿÿ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(“ª©í
+>
+java:S1481")Remove this unused "rand" local variable.(³§¸~

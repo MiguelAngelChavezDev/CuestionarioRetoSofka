@@ -1,0 +1,15 @@
+
+-
+java:S1700"Rename field "pregunta"(·ª¿Ó
+j
+java:S1104"TMake pregunta a static final constant or non-public and provide accessors if needed.(·ª¿Ó
+p
+java:S1104"UMake repuesta1 a static final constant or non-public and provide accessors if needed.(º™ÜŠýÿÿÿÿ
+p
+java:S1104"UMake repuesta2 a static final constant or non-public and provide accessors if needed.(²™Öåÿÿÿÿÿ
+p
+java:S1104"UMake repuesta3 a static final constant or non-public and provide accessors if needed.(µ ¹¼ýÿÿÿÿ
+p
+java:S1104"UMake repuesta4 a static final constant or non-public and provide accessors if needed.(ºÝ‘ôþÿÿÿÿ
+x
+java:S1104	"]Make respuestaCorrecta a static final constant or non-public and provide accessors if needed.(ÙËÖãýÿÿÿÿ
